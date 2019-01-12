@@ -1,6 +1,8 @@
 FROM ndegardin/boozang
 LABEL maintainer="Nicolas Degardin <degardin.n@gmail.com>"
 
+USER root
+
 RUN apt-get update && apt-get install -y jq python-pip
 
 # Let's start with some basic stuff.
